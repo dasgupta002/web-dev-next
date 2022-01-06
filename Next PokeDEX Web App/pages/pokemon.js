@@ -16,7 +16,6 @@ export async function getServerSideProps({ query }) {
 }
 
 export default function Pokeman({ pokeman }) {
-    console.log(pokeman)
     return (
         <Layout title = { "PokeDEX - " + pokeman.name }>
             <h1 className = "text-4xl font-light capitalize mt-6 mb-12 text-center">{ pokeman.name }</h1>
